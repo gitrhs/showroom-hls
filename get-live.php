@@ -13,7 +13,6 @@ $roomid1 = explode("SrGlobal.room_id= ", $homepage);
 $roomid2 = explode(";", $roomid1[1]);
 $roomid = $roomid2[0];
 //call json
-//https://www.showroom-live.com/api/live/streaming_url?room_id=372499&abr_available=1&csrf_token=RNVbEDByebMGKW483rtvU7UstPbrM5rU4U_TW_5m
 function REQUEST($URL1) {
 $ch1 = curl_init();
 curl_setopt($ch1, CURLOPT_URL, $URL1);
